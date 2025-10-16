@@ -1,69 +1,134 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
-  background: #f5f5f5;
-}
-
-h1 {
-  color: #333;
-}
-
-form {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 400px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-input {
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-button {
-  background: #007BFF;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-}
-
-button:hover {
-  background: #0056b3;
-}
-
-ul {
-  margin-top: 20px;
-  list-style: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
   padding: 0;
 }
 
-li {
-  background: white;
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 40px;
+}
+
+main {
+  background-image: url('/pexels-sohi-807598.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container_h1 {
+  color: rgb(0, 255, 60);
+  text-align: center;
+  margin-top: 30px;
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.container_h1:hover {
+  color: rgb(25, 181, 4);
+  font-size: 2.2rem;
+}
+
+.container_form {
+  background: #fff;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.container_form input {
+  width: 100%;
+  margin-bottom: 20px;
   padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.container_form input:focus {
+  border-color: rgb(0, 255, 60);
+  color: firebrick;
+}
+
+.container_form button {
+  background: rgb(0, 255, 60);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease, font-size 0.3s ease;
+}
+
+.container_form button:hover {
+  background: rgb(25, 181, 4);
+  font-size: 1.05rem;
+}
+
+#lista {
+  list-style: none;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+  padding: 0;
+}
+
+#lista li {
+  background: white;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-li button {
-  background: #dc3545;
-  border: none;
+#lista li span {
+  flex: 1;
+}
+
+.delete-btn {
+  background: #ff4d4d;
   color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 0.9rem;
 }
 
-li button:hover {
-  background: #a71d2a;
+.delete-btn:hover {
+  background: #e03a3a;
+}
+
+.clear-btn {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  max-width: 200px;
+}
+
+.clear-btn:hover {
+  background: #e64b4b;
+  transform: scale(1.05);
 }

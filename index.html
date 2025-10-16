@@ -1,22 +1,28 @@
- !DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guardar y Mostrar Datos</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Guardar datos en LocalStorage</h1>
-  
-  <form id="form">
-    <input type="text" id="dato1" placeholder="Dato 1" required>
-    <input type="text" id="dato2" placeholder="Dato 2" required>
-    <input type="text" id="dato3" placeholder="Dato 3" required>
-    <button type="submit">Guardar</button>
-  </form>
+  <main>
+    <div class="container">
+      <h1 class="container_h1">Guardar datos en LocalStorage</h1>
 
-  <ul id="lista"></ul>
+      <form class="container_form">
+        <input type="text" id="dato1" placeholder="Dato 1" required>
+        <input type="text" id="dato2" placeholder="Dato 2" required>
+        <input type="text" id="dato3" placeholder="Dato 3" required>
+        <button type="submit">Guardar</button>
+      </form>
+      
+      <ul id="lista"></ul>
+
+      <button id="eliminar-todo" class="clear-btn">Eliminar todo</button>
+    </div>
+  </main>
 
   <script src="script.js"></script>
 </body>
